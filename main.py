@@ -76,8 +76,9 @@ def DSTAT(dom, port=80, path="/"):
         send_packet(event,1)
 
     g = threading.Event()
+    print("11111111111111")
     for i in range(7000):
-        # print(f"Thread {str(i)} started !")
+        print(f"Thread {str(i)} started !")
         Thread(target=lambda: send_packet(g)).start()
     print("started")
     # input("[ENTER]: ")
