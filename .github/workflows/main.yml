@@ -27,4 +27,4 @@ jobs:
          env:
            ADMIN_USER_ID: ${{ secrets.ADMIN_USER_ID }}
            BOT_API_TOKEN: ${{ secrets.BOT_API_TOKEN }}
-         run: python Bot.py
+         run: python main.py
